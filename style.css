@@ -1,189 +1,390 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - end page22</title>
-  <link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Landing Page</title>
-</head>
-<body>
-    <div class="landing-page">
-        <header>
-          <a href="#" class="logo"><b>Welcome</b></a>
-            <div class="container">
-                <ul class="links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="work.html">My Work</a></li>
-                    <li><a href="info.html">Contact us</a></li>
-                    <li id='getstarted'><a href="get-started.html">Explore</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="content">
-            <div class="container">
-                <div class="info">
-                    <h1>Explore</h1>
-                    <p>I am a second year student in game development.
-                        I have a talent for game development as a result of growing up with games since my childhood.
-                        I am now looking for a position in game development.</p>
-                    <button>My works!</button>
-                </div>
-                <div class="image">
-                    <img src="https://i.pinimg.com/736x/b1/33/4f/b1334f43d458b7a3794cd239928370c7.jpg" alt="Game Developer Illustration">
-                </div>
-            </div>
-        </div>
-    </div>
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
 
-    <!-- Biography Section Start -->
-    <section class="biography section" id="biography">
-        <h2 class="section__title-1">
-            <span>Biography.</span>
-        </h2>
-        <div class="biography__container container">
-            <p class="biography__description">I am a passionate game developer with a deep love for creating immersive and engaging game experiences. My journey into game development began in childhood, where countless hours spent playing and analyzing games sparked my interest in this creative field.
+a {
+    text-decoration: none;
+}
 
-Growing up, I was fascinated by how games could transport players to different worlds and tell compelling stories. This led me to experiment with game design and programming early on, building a solid foundation in technical skills and game mechanics.
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #808080;
+}
 
-Currently, I am pursuing a degree in game development at [Your University], where I am gaining in-depth knowledge of game design, programming, and the overall development process. My coursework includes computer graphics, artificial intelligence, and interactive storytelling. I am also actively involved in extracurricular activities like game development clubs and hackathons, which provide valuable hands-on experience and collaboration opportunities.
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-In addition to my academic pursuits, I am constantly working on personal projects to enhance my skills and expand my portfolio. These endeavors help me refine my abilities in game design, coding, and project management, pushing the boundaries of my creativity and technical expertise.
+.landing-page header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-Looking ahead, I am eager to continue my journey in the game development industry. I aspire to work with a team of talented developers, leveraging my skills and passion to bring new and exciting ideas to life. My ultimate ambition is to create games that inspire, entertain, and challenge players in meaningful ways.
+.landing-page header .logo {
+    color: #5d5d5d;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+}
 
-In summary, my lifelong passion for games, combined with my formal education and hands-on experience, equips me with the skills and determination to excel in game development. I am committed to continuous learning and growth, always striving to explore new possibilities in game design and technology. Through dedication and creativity, I aim to contribute to the evolution of the gaming industry and create experiences that captivate players worldwide.</p>
-        </div>
-    </section>
-    <!-- Biography Section End -->
+.landing-page header .links {
+    display: flex;
+    align-items: center;
+}
 
-    <section class="projects section" id="projects">
-        <h2 class="section__title-1">
-            <span>Projects.</span>
-        </h2>
-        <div class="projects__container container grid">
-            <article class="projects__card">
-                <div class="projects__image">
-                    <img src="https://play-lh.googleusercontent.com/xX0C85Js7GQ2B41_NmCFkALEnhOnQubZ_bOK4YYBU3P6FabmDW6uOvpheCOCufd9Og=w526-h296-rw" alt="Restaurant Website" class="projects__img">
-                    <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-                </div>
-                <div class="projects__content">
-                    <h3 class="projects__subtitle">Game</h3>
-                    <h2 class="projects__title">survival game</h2>
-                    <p class="projects__description">2d Survival game similar to forest</p>
-                </div>
-            </article>
-            <article class="projects__card">
-                <div class="projects__image">
-                    <img src="https://ejaw.net/wp-content/uploads/2023/12/icculus0216_screenshot_from_a_nintendo_video_game_Super_Mario_3256883d-8c4d-46d0-8c31-cb9c0e2488c9.png" alt="E-commerce Website" class="projects__img">
-                    <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-                </div>
-                <div class="projects__content">
-                    <h3 class="projects__subtitle">Game</h3>
-                    <h2 class="projects__title">2D platform Game</h2>
-                    <p class="projects__description">action 2d game similar to mario</p>
-                </div>
-            </article>
-            <article class="projects__card">
-                <div class="projects__image">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-portfolio-website-6764331-5565151.png?f=webp" alt="Portfolio Website" class="projects__img">
-                    <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                    </a>
-                </div>
-                <div class="projects__content">
-                    <h3 class="projects__subtitle">Website</h3>
-                    <h2 class="projects__title">Portfolio Website</h2>
-                    <p class="projects__description">Personal portfolio website to showcase design and development skills, including a blog and contact form.</p>
-                </div>
-            </article>
-        </div>
-    </section>
+.landing-page header .links li {
+    margin-left: 20px;
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: .3s ease;
+}
 
-    <section class="more-projects section" id="more-projects">
-    <h2 class="section__title-1">
-        <span>Projects Details</span>
-    </h2>
-    <div class="more-projects__container container grid">
-        <div class="more-projects__card">
-            <img src="https://terraria-game.com/wp-content/uploads/2023/03/1647232834_39-abrakadabra-fun-p-kto-zhivet-v-lesu-terrariya-49-150x150-optimized.png" alt="Project Image" class="more-projects__img">
-            <div class="more-projects__content">
-                <h3 class="more-projects__title">2D Survival Game</h3>
-                <p class="more-projects__description">A 2D survival game challenges players to gather resources, build shelters, and fend off threats in a side-scrolling environment. Players must manage health, hunger, and stamina to survive. Popular examples include "Terraria" and "Don't Starve." Strategy and resource management are key.</p>
-            </div>
-        </div>
-        <div class="more-projects__card">
-            <img src="https://games.lol/wp-content/uploads/2021/01/super-mario-run-on-pc-150x150.jpg.webp" alt="Project Image" class="more-projects__img">
-            <div class="more-projects__content">
-                <h3 class="more-projects__title">2D Platform Game</h3>
-                <p class="more-projects__description">A 2D platform game involves navigating characters through a side-scrolling world with obstacles and enemies. Players jump, run, and solve puzzles to progress. Classic examples include "Super Mario" and "Sonic the Hedgehog." These games emphasize timing, precision, and strategy.</p>
-            </div>
-        </div>
-        <div class="more-projects__card">
-            <img src="https://static.thenounproject.com/png/2595789-200.png" alt="Project Image" class="more-projects__img">
-            <div class="more-projects__content">
-                <h3 class="more-projects__title">Portfolio Website</h3>
-                <p class="more-projects__description">A portfolio website showcases your skills and projects, providing a professional digital presence. It's essential for personal branding, making it easier for potential clients or employers to view your work and contact you. User-friendly design and SEO are crucial for visibility.</p>
-            </div>
-        </div>
-    </div>
-</section>
+.landing-page header .links li:hover {
+    color: #4d84e2;
+}
 
-    <div class="container contact-section">
-        <form action="action_page.php">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/div-coding-icon.png" class="contact-image" alt="Coding Icon">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+.landing-page header .links a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+}
 
-   <footer class="footer">
-    <div class="row">
-        <ul class="social-icons">
-            <li><a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-    </div>
-    <div class="row">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </div>
-</footer>
+.landing-page header .links #getstarted a {
+    background-color: #4d84e2;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 20px;
+    transition: .3s ease;
+    font-weight: bold;
+}
 
-</body>
-</html>
-<!-- partial -->
-  
-</body>
-</html>
+.landing-page header .links #getstarted a:hover {
+    background-color: #3d6fb7;
+}
+
+.landing-page .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background-color: #e2e8f0;
+    padding: 0 20px;
+}
+
+.landing-page .content .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.landing-page .content .info {
+    flex: 1;
+    max-width: 600px;
+    color: #5d5d5d;
+}
+
+.landing-page .content .info h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #4d84e2;
+    font-family: 'Fredoka One', cursive;
+}
+
+.landing-page .content .info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.landing-page .content .info button {
+    background-color: #4d84e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.landing-page .content .info button:hover {
+    background-color: #3d6fb7;
+}
+
+.landing-page .content .image {
+    flex: 1;
+    max-width: 200px;
+}
+
+.landing-page .content .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Biography Section */
+.biography {
+    padding: 400px 0;
+    background-color: #f7f7f7;
+}
+
+.biography__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.biography__description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section__title-1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section__title-1 span {
+    color: #007bff;
+}
+
+.projects {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.section__title-1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-family: 'Fredoka One', cursive;
+    color: #4d84e2;
+}
+
+.projects__container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projects__card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s ease;
+}
+
+.projects__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects__image {
+    position: relative;
+}
+
+.projects__img {
+    width: 100%;
+    height: auto;
+}
+
+.projects__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4d84e2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.projects__button:hover {
+    background-color: #3d6fb7;
+}
+
+.projects__content {
+    padding: 20px;
+    color: #5d5d5d;
+}
+
+.projects__subtitle {
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 10px;
+    color: #4d84e2;
+}
+
+.projects__title {
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 10px;
+}
+
+.projects__description {
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+}
+/* Projects Details Section */
+.more-projects {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.more-projects__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.more-projects__card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s ease;
+}
+
+.more-projects__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.more-projects__img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.more-projects__content {
+    padding: 20px;
+}
+
+.more-projects__title {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 10px;
+}
+
+.more-projects__description {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #e2e8f0;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5d5d5d;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section input[type="text"],
+.contact-section select,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section input[type="submit"] {
+    background-color: #4d84e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #3d6fb7;
+}
+
+.contact-section .contact-image {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: .3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #4d84e2;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
